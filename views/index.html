@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Conversor de Moeda</h1>
+
+        <form id="convertForm">
+            <div class="input-group">
+                <label for="amount">Valor</label>
+                <input type="number" step="0.01" name="amount" placeholder="Valor" required />
+            </div>
+
+            <div class="currency-group">
+                <div class="select-container">
+                    <label for="from">De</label>
+                    <select name="from" id="from" required>
+                        <option value="USD">USD - Dólar Americano</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="BRL">BRL - Brasil</option>
+                        <option value="GBP">GBP - Libra Esterlina</option>
+                        <option value="JPY">JPY - Iene Japonês</option>
+                        <option value="CAD">CAD - Dólar Canadense</option>
+                        <option value="AUD">AUD - Dólar Australiano</option>
+                        <option value="CHF">CHF - Franco Suíço</option>
+                        <option value="CNY">CNY - Yuan Chinês</option>
+                    </select>
+                </div>
+
+                <button type="button" id="swap-currencies-btn" title="Inverter moedas">&#8644</button>
+
+                <div class="select-container">
+                    <label for="to">Para</label>
+                    <select name="to" id="to" required>
+                        <option value="">Para:</option>
+                        <option value="USD">USD - Dólar Americano</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="BRL">BRL - Brasil</option>
+                        <option value="GBP">GBP - Libra Esterlina</option>
+                        <option value="JPY">JPY - Iene Japonês</option>
+                        <option value="CAD">CAD - Dólar Canadense</option>
+                        <option value="AUD">AUD - Dólar Australiano</option>
+                        <option value="CHF">CHF - Franco Suíço</option>
+                        <option value="CNY">CNY - Yuan Chinês</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Converter</button>
+        </form>
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
