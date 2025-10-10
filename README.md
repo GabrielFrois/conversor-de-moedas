@@ -1,6 +1,6 @@
 # Conversor de Moedas
 
-Este é um projeto simples de um conversor de moedas, desenvolvido como parte da aula 8 da disciplina Desenvolvimento Web III da Fatec. 
+Este é um projeto de um conversor de moedas, desenvolvido como parte da aula 8 da disciplina Desenvolvimento Web III da Fatec. 
 A aplicação utiliza uma interface web para capturar o valor, a moeda de origem e a moeda de destino, e realiza a conversão utilizando dados consumidos da [ExchangeRate-API](https://www.exchangerate-api.com/).  
 
 ![Demonstração do Conversor de Moedas](./assets/demonstracao.png)
@@ -16,7 +16,6 @@ A aplicação utiliza uma interface web para capturar o valor, a moeda de origem
 
 ## Pré-requisitos
 - Node.js instalado
-- npm (geralmente instalado com o Node.js)
 - Uma chave de API da ExchangeRate-API 
 
 ## Instalação e Execução
